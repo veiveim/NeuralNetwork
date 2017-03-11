@@ -9,12 +9,14 @@ inputs = [[matrix([1,1]), matrix([0,2]), matrix([3,1])],\
 # truth output, [1,1] means class 1, [1,-1] means class 2, [-1,1] means class 3
 t = [mat([[1],[1]]), mat([[1],[-1]]), mat([[-1],[1]])]
 
-# weight matrix, bias matrix, output, error, learning rate alpha, torelate value
+# weight matrix, bias matrix, output, error
 W = mat([[1,1], [1,1]])
 b = mat([[1],[1]])
 a = mat([[1],[1]])
 e = mat([[1],[1]])
-alpha = 0.2
+
+# learning rate alpha, torelate value
+alpha = 0.8
 delta = 1
 # output of nnet: a = W*p + b
  
